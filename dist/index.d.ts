@@ -1,3 +1,5 @@
-export default class FarolExtension {
-    register(farolExtensionConfig: any, trigger: string, handler: (...args: any[]) => void): void;
+export declare class FarolExtension {
+    farolExtensionConfig: any;
+    constructor(farolExtensionConfig: any);
+    register(trigger: string, handler: (...args: any[]) => void): void;
 }

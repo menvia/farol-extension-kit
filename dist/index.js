@@ -5,12 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var events_1 = __importDefault(require("events"));
 var FarolExtension = /** @class */ (function () {
-    function FarolExtension() {
+    function FarolExtension(farolExtensionConfig) {
+        this.farolExtensionConfig = farolExtensionConfig;
     }
-    FarolExtension.prototype.register = function (farolExtensionConfig, trigger, handler) {
+    FarolExtension.prototype.register = function (trigger, handler) {
         var eventEmitter = new events_1.default.EventEmitter();
-        eventEmitter.on(farolExtensionConfig.id + "_" + trigger, handler);
+        eventEmitter.on(this.farolExtensionConfig.id + "_" + trigger, handler);
     };
     return FarolExtension;
 }());
-exports.default = FarolExtension;
+exports.FarolExtension = FarolExtension;
