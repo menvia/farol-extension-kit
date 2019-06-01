@@ -1,0 +1,29 @@
+{
+  "name": "farol-extension-kit",
+  "version": "0.0.1",
+  "description": "Farol Extension Kit",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "farol",
+    "extension"
+  ],
+  "author": {
+    "name": "Menvia Developer",
+    "email": "developer@menvia.com",
+    "url": "https://menvia.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menvia/farol-extension-kit/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.4",
+    "typescript": "^3.5.1"
+  }
+}
