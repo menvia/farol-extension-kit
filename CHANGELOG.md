@@ -1,7 +1,8 @@
-## 0.0.6 / 2019.08.04
+## 0.0.6 ~ 0.0.7 / 2019.08.04
 
 #### Enhancements
 
+- Add homepage and repository urls
 - Rename from Farol Extension Kit to Open Extension Kit
 
 ##### Dependency

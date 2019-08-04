@@ -1,35 +1,40 @@
 {
-  "name": "@open-extension/kit",
-  "version": "0.0.6",
-  "description": "Open Extension Kit",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "prepublish": "npm run build",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "open-extension",
-    "extension"
-  ],
   "author": {
-    "name": "Menvia Developer",
     "email": "developer@menvia.com",
+    "name": "Menvia Developer",
     "url": "https://menvia.com"
   },
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/open-extension/open-extension-kit/issues"
   },
+  "description": "Open Extension Kit",
   "devDependencies": {
     "@types/node": "^12.6.9",
     "typescript": "^3.5.3"
   },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "homepage": "https://github.com/open-extension/open-extension-kit",
+  "keywords": [
+    "open-extension",
+    "extension"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "@open-extension/kit",
   "publishConfig": {
     "access": "public"
   },
-  "engines": {
-    "node": ">= 10.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-extension/open-extension-kit.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.7"
 }
