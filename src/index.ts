@@ -1,12 +1,9 @@
-import * as events from 'events';
-const FarolEventEmitter = new events.EventEmitter();
+import { EventEmitter } from 'events';
+const eventEmitter = new EventEmitter();
 class FarolExtension {
-  farolExtensionConfig: any;
-  constructor(farolExtensionConfig: any) {
-    this.farolExtensionConfig = farolExtensionConfig;
-  }
+  constructor(public config: any) {}
   register(trigger: string, handler: (...args: any[]) => void) {
-    FarolEventEmitter.on(`${this.farolExtensionConfig.id}_${trigger}`, handler);
+    eventEmitter.on(`${this.config.id}_${trigger}`, handler);
   }
 }
-export { FarolEventEmitter, FarolExtension };
+export { eventEmitter, FarolExtension };
