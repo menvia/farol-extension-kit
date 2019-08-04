@@ -5,7 +5,7 @@
     "url": "https://menvia.com"
   },
   "bugs": {
-    "url": "https://github.com/open-extension/open-extension-kit/issues"
+    "url": "https://github.com/open-extension/kit/issues"
   },
   "description": "Open Extension Kit",
   "devDependencies": {
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 10.0.0"
   },
-  "homepage": "https://github.com/open-extension/open-extension-kit",
+  "homepage": "https://github.com/open-extension/kit",
   "keywords": [
     "open-extension",
     "extension"
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-extension/open-extension-kit.git"
+    "url": "git+https://github.com/open-extension/kit.git"
   },
   "scripts": {
     "build": "tsc",
