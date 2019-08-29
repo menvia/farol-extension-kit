@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var events_1 = require("events");
-var eventEmitter = new events_1.EventEmitter();
-exports.eventEmitter = eventEmitter;
-var FarolExtension = /** @class */ (function () {
-    function FarolExtension(config) {
+var OpenExtension = /** @class */ (function () {
+    function OpenExtension(config) {
         this.config = config;
     }
-    FarolExtension.prototype.register = function (trigger, handler) {
-        eventEmitter.on(this.config.id + "_" + trigger, handler);
+    OpenExtension.prototype.register = function (trigger, handler) {
+        // Add to the global open extension functions
+        if (!global.openExtension[this.config.id]) {
+            global.openExtension[this.config.id] = {};
+        }
+        global.openExtension[this.config.id][trigger] = handler;
     };
-    return FarolExtension;
+    return OpenExtension;
 }());
-exports.FarolExtension = FarolExtension;
+exports.OpenExtension = OpenExtension;

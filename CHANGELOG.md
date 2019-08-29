@@ -1,3 +1,13 @@
+## 0.0.10 / 2019.08.28
+
+#### Enhancements
+
+- Change the class name from FarolExtension to OpenExtension
+
+##### Dependency
+
+- Update [typescript 3.6.2](https://github.com/microsoft/TypeScript/releases) 🚀
+
 ## 0.0.9 / 2019.08.25
 
 #### Enhancements
